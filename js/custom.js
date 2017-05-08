@@ -30,7 +30,24 @@ $(function () {
       loop: true,
       autoplay: true,
       items: 3,
-      autoplayHoverPause: true
+      autoplayHoverPause: true,
+              responsive : {
+            // breakpoint from 0 up
+            0 : {
+              items: 1
+            },
+            // breakpoint from 480 up
+            480 : {
+              items: 1
+            },
+            // breakpoint from 768 up
+            768 : {
+              items: 3
+            },
+            992 : {
+              items: 3
+            }
+        }
 
   })
 
@@ -45,8 +62,7 @@ $(function () {
       loop: true,
       autoplay: true,
       items: 1,
-      autoplayHoverPause: true
-
+      autoplayHoverPause: true,
   })
 
 });
@@ -71,7 +87,24 @@ $(function () {
       loop: true,
       autoplay: true,
       items: 6,
-      autoplayHoverPause: true
+      autoplayHoverPause: true,
+              responsive : {
+            // breakpoint from 0 up
+            0 : {
+              items: 1
+            },
+            // breakpoint from 480 up
+            480 : {
+              items: 2
+            },
+            // breakpoint from 768 up
+            768 : {
+              items: 4
+            },
+            992 : {
+              items: 6
+            }
+        }
 
   })
 
@@ -84,15 +117,39 @@ $(function () {
 
   $(window).scroll(function() {
 
-    if($(this).scrollTop() <= 200)
-    {
-      $("nav").removeClass("navbar-custom");
-    }
-    else
+    if($(this).scrollTop() >= 64)
     {
       $("nav").addClass("navbar-custom");
     }
+    else
+    {
+      $("nav").removeClass("navbar-custom");
+    }
 
   })
+
+});
+
+
+//navigation scroll smooth effect//
+
+
+
+
+// Smooth scrolling
+
+
+
+//menu icon closes automatically when user clicks on it//
+
+$(function() {
+
+  $(".navbar-collapse ul li a").on("click touch",function()
+  {
+
+    $(".navbar-toggler").click();
+  }
+
+  );
 
 });

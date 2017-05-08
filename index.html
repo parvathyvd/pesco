@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Pesco-Responsive Site</title>
   <link rel="icon" href="favicon.ico" type="image/ico">
   <!-- Google font-->
@@ -22,12 +22,13 @@
 
 <body data-spy="scroll" data-target="#navigation" data-offset="56">
   <div id="navigation">
-  <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse navbar-custom">
+  <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top">
+    <a class="navbar-brand" href="#"><img src="img/pesco-logo.png"></a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pesco-menu" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon custom-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="pesco-menu">
-      <a class="navbar-brand" href="#">Logo</a>
+    <div class="collapse navbar-collapse pesco-coll-bg" id="pesco-menu">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link custom" href="#home">Home</a>
@@ -61,7 +62,7 @@
 <section id="home">
   <div class="cover-container animated fadeIn">
     <div class="inner-cover text-sm-center animated zoomIn">
-      <h1 class="display-4">Watch out our modern responsive website</h1>
+      <h1 class="display-4 hero-heading">Watch out our modern responsive website</h1>
       <br>
       <button class="btn btn-outline-info btn-lg btn-custom" role="button"> Watch </button>
     </div>
@@ -72,13 +73,13 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h1 class="display-5 text-sm-center project-heading wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="1s">Services</h1>
+        <h1 class="display-4 text-sm-center project-heading wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Services</h1>
           <hr>
         </div>
       </div>
       <div class="services-desc wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
         <div class="row services-desc1">
-          <div class="col-sm-4">
+          <div class="col-md-4 col-sm-6 no-gutter">
             <div class="services-icon"><i class="fa fa-paint-brush fa-2x"></i>
             </div>
             <div class="services-title">
@@ -86,37 +87,35 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4 col-sm-6 no-gutter">
             <div class="services-icon"><i class="fa fa-laptop fa-2x"></i>
             </div>
             <div class="services-title">
               <h4>Web coding</h4></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4 col-sm-6 no-gutter">
             <div class="services-icon"><i class="fa fa-envelope fa-2x"></i>
             </div>
             <div class="services-title">
               <h4>Email Marketing</h4></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
+          <div class="col-md-4 col-sm-6 no-gutter">
             <div class="services-icon"><i class="fa fa-barcode fa-2x"></i>
             </div>
             <div class="services-title">
               <h4>Web Hosting</h4></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4 col-sm-6 no-gutter">
             <div class="services-icon"><i class="fa fa-industry fa-2x"></i>
             </div>
             <div class="services-title">
               <h4>Web Maintenance</h4></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4 col-sm-6 no-gutter">
             <div class="services-icon"><i class="fa fa-folder fa-2x"></i>
             </div>
             <div class="services-title">
@@ -124,11 +123,10 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
-      </div>
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="clearfix">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -137,11 +135,13 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4 wow animated fadeInUp about-desc" data-wow-duration="1s" data-wow-delay=".5s">
+        <div class="col-md-4 wow animated fadeInUp about-desc" data-wow-duration="1s" data-wow-delay=".5s">
+          <div class="about-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, eos. Lorem ipsum dolor sit amet,Lorem
             ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,Lorem ipsum dolor sit amet, consectetur adipisicing elit. con eos.Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Mollitia, eos. Lorem ipsum dolor sit amet, con</p>
           <button class="btn btn-outline-info d-block mx-auto btn-custom button-about wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" href="#" role="button">About</button>
+        </div>
         </div>
         <div class="about-bg ml-auto">
         </div>
@@ -158,56 +158,56 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3 ">
+        <div class="col-md-3 col-sm-4">
           <div class="img-wrapper">
             <a href="img/1.jpg">
               <img src="img/1.jpg" alt="image of work environment">
             </a>
           </div>
         </div>
-        <div class="col-sm-3 ">
+        <div class="col-md-3 col-sm-4">
           <div class="img-wrapper">
             <a href="img/2.jpg">
               <img src="img/2.jpg" alt="image of work environment">
             </a>
           </div>
         </div>
-        <div class="col-sm-3 ">
+        <div class="col-md-3 col-sm-4">
           <div class="img-wrapper">
             <a href="img/3.jpg">
               <img src="img/3.jpg" alt="image of work environment">
             </a>
           </div>
         </div>
-        <div class="col-sm-3 ">
+        <div class="col-md-3 col-sm-4">
           <div class="img-wrapper">
             <a href="img/4.jpg">
               <img src="img/4.jpg" alt="image of work environment">
             </a>
           </div>
         </div>
-        <div class="col-sm-3 ">
+        <div class="col-md-3 col-sm-4">
           <div class="img-wrapper">
             <a href="img/5.jpg">
               <img src="img/5.jpg" alt="image of work environment">
             </a>
           </div>
         </div>
-        <div class="col-sm-3 ">
+        <div class="col-md-3 col-sm-4">
           <div class="img-wrapper">
             <a href="img/6.jpg">
               <img src="img/6.jpg" alt="image of work environment">
             </a>
           </div>
         </div>
-        <div class="col-sm-3 ">
+        <div class="col-md-3 col-sm-4">
           <div class="img-wrapper">
             <a href="img/7.jpg">
               <img src="img/7.jpg" alt="image of work environment">
             </a>
           </div>
         </div>
-        <div class="col-sm-3 ">
+        <div class="col-md-3 col-sm-4">
           <div class="img-wrapper">
             <a href="img/8.jpg">
               <img src="img/8.jpg" alt="image of work environment">
@@ -338,7 +338,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-4 wow animated zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
+      <div class="col-md-4 wow animated zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
         <div class="pricing text-sm-center">
           <button class="btn btn-info btn-sm btn-price" role="button">Basic</button>
           <div class="number">49<sup>$</sup></div>
@@ -350,7 +350,7 @@
           <button class="btn btn-outline-info btn-price" role="button">Extended</button>
         </div>
       </div>
-      <div class="col-sm-4 wow animated bounceInUp" data-wow-duration="1s" data-wow-delay=".5s">
+      <div class="col-md-4 wow animated bounceInUp" data-wow-duration="1s" data-wow-delay=".5s">
         <div class="pricing-main text-sm-center">
           <button class="btn btn-outline-info btn-price-main" role="button">Basic</button>
           <div class="number">89<sup>$</sup></div>
@@ -362,7 +362,7 @@
           <button class="btn btn-outline-primary btn-main" role="button">Extended</button>
         </div>
       </div>
-      <div class="col-sm-4 wow animated zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
+      <div class="col-md-4 wow animated zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
         <div class="pricing text-sm-center">
           <button class="btn btn-info btn-sm btn-price" role="button">Basic</button>
           <div class="number">69<sup>$</sup></div>
@@ -494,10 +494,10 @@
     </div>
     <div class="container-fluid">
       <div class="row copyright-nav">
-        <div class="col-sm-6">
+        <div class="col-lg-6 credit-author">
           <small>&copy;copyright 2017|All Rights Reserved. Designed by <a href="http://parvathy.vd.realwordpressdevelopment.com/">Parvathy Vazhoor</a> </small>
         </div>
-        <div class="col-sm-6">
+        <div class="col-lg-6 hidden-md-down">
           <ul class="list-unstyled d-flex mx-auto footer-nav">
           <li><a href="#home">Home/</li></a>
           <li><a href="#services">services/</li></a>
